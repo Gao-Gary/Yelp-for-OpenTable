@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Yelp for OpenTable",
+  "description": "Adds a Yelp section to an OpenTable restaurant listing",
+  "version": "1.3",
+
+  "icons": {"16": "images/icon16.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"},
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.opentable.com/*"],
+      "js": ["script/jquery.js", "script/main.js"]
+    }
+  ],
+
+  "permissions": [
+    "https://opentable.com/"
+  ],
+
+  "web_accessible_resources": [
+    "images/*.png",
+    "script/*.js"
+  ]
+}
