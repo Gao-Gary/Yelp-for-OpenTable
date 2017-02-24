@@ -17,7 +17,8 @@
   ],
 
   "permissions": [
-    "https://opentable.com/"
+    "https://opentable.com/",
+    "https://api.yelp.com/v3/*"
   ],
 
   "web_accessible_resources": [
