@@ -48,7 +48,7 @@ function getResID(name, location, callback, errorCallback) {
             location: location,
             limit: 1
         },
-        headers: {"Authorization": "Bearer YT5DWSAAKlqAAer0-rapgayJp2Zk6XmKQ3i58uOnMJXCpWFo-Rf2-aAvJb0JbZ3Ypr3pC9bE-EiQtHiXLGDSCXxW_j62f7dCbIiKYKkylNVReTsFMkKHaYw-CTyiWHYx"},
+        headers: {"Authorization": "Bearer placeholder"},
         success: function(response){
             if(response.length < 1) {
                 errorCallback('Restaurant not found');
@@ -76,7 +76,7 @@ function getReviews(id, rating, link, callback, errorCallback) {
     $.ajax({
         url: "https://api.yelp.com/v3/businesses/" + id + "/reviews",
         type: "get",
-        headers: {"Authorization": "Bearer YT5DWSAAKlqAAer0-rapgayJp2Zk6XmKQ3i58uOnMJXCpWFo-Rf2-aAvJb0JbZ3Ypr3pC9bE-EiQtHiXLGDSCXxW_j62f7dCbIiKYKkylNVReTsFMkKHaYw-CTyiWHYx"},
+        headers: {"Authorization": "Bearer placeholder"},
         success: function(response){
             if(response.length < 1) {
                 errorCallback('No reviews found');
